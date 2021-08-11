@@ -1,3 +1,7 @@
+## Hourglass
+
+The "Hourglass" marketplace is a platform for buying and selling services and goods which is having expiry date such as movie tickets, fashion coupons, Etc. Along with that this platform also provides buying and selling services, such as electronics, fashion items, furniture, household goods, cars and bikes. Apparently, this platform is more for the last minute deals instead of regular buying and selling services.
+
 ## Usage
 
 After installation, run `npm install` and then run `npm start` which will open up our Hourglass application.
