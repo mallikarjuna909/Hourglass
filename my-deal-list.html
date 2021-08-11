@@ -1,0 +1,28 @@
+<div class="row">
+    <div class='col-md-12 mx-1 my-2'>
+        <button type="button" class="btn btn-success float-right" ng-click="goToDealForm()">Create Deal</button>
+    </div>
+    <div class="col-xl-3 col-md-6 mb-4" ng-repeat="deal in myDeals">
+        <div class="card shadow h-100"  ng-click="goToDealForm(deal.id)">
+            <div  class="card-body">
+                <div class="row no-gutters align-items-center">
+                    <div class="col-auto">
+                        <i class="fas fa-hourglass-half fa-2x text-gray-300"></i>
+                    </div>
+                    <div class="col ml-3">
+                        <div class="font-weight-bold text-primary text-capitalize mb-2">
+                            {{deal.dealName}}</div>
+                        <div class="mb-2">
+                            <span class="font-weight-bold text-success">Rs. {{deal.price}}/-</span> <del class="px-2">Rs. {{deal.actualPrice}}/-</del>  
+                        </div>
+                        <div class="text-xs font-weight-bold text-primary text-capitalize mb-1">
+                            <span class="text-xs badge badge-pill badge-danger">{{deal.expiry}}</span> <span class="text-xs badge badge-pill badge-warning">{{Math.round(((deal.actualPrice - deal.price)/deal.actualPrice)*100)}}% Off</span></div>
+                    </div>
+                    <!-- <div class="col-auto">
+                        <i class="fas fa-calendar fa-2x text-gray-300"></i>
+                    </div> -->
+                </div>
+            </div>
+        </div>
+    </div>
+</div>
